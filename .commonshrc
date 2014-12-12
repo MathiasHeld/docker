@@ -1,0 +1,13 @@
+#global aliases and functions
+alias cdd='cd /c/Users/Mathias/docker/'
+alias dps='docker ps'
+alias dim='docker images'
+alias din='docker inspect'
+alias drunit='id=${PWD##*/};echo "Run ${id} ...";docker run --rm -it --name ${id} executor/${id}'
+alias drunrm='docker run --rm'
+alias drun='docker run'
+alias drm='docker rm'
+alias dbu='container=${PWD##*/};echo "build Sub-Container: ${container}";docker build -t=executor/${container} .'
+alias dsd='docker stop ${1} ; docker delete ${1}'
+
+alias a='alias'
